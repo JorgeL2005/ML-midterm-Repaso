@@ -9,29 +9,28 @@
 
 -   Busca un hiperplano lineal:
 
-    $$
-    \mathbf{w}^T \mathbf{x} + b = 0
-    $$
+
+    $$\mathbf{w}^T \mathbf{x} + b = 0$$
 
 -   Define dos hiperplanos de soporte paralelos:
 
-    $$
-    \mathbf{w}^T \mathbf{x} + b = +1 \quad \text{y} \quad \mathbf{w}^T \mathbf{x} + b = -1
-    $$
+    
+    $$\mathbf{w}^T \mathbf{x} + b = +1 \quad \text{y} \quad \mathbf{w}^T \mathbf{x} + b = -1$$
+     
 
 -   Estos tocan los vectores soporte, puntos de datos más cercanos a la frontera.
 
 -   El margen es la distancia entre estos dos hiperplanos:
 
-    $$
-    \text{Margen} = \frac{2}{\|\mathbf{w}\|}
-    $$
+     
+    $$\text{Margen} = \frac{2}{\|\mathbf{w}\|}$$
+     
 
 -   La restricción de clasificación correcta y margen mínimo es:
 
-    $$
-    t^{(i)} (\mathbf{w}^T \mathbf{x}^{(i)} + b) \geq 1
-    $$
+     
+    $$t^{(i)} (\mathbf{w}^T \mathbf{x}^{(i)} + b) \geq 1$$
+     
 
 ## 3. Transformación de maximización a minimización
 
@@ -39,11 +38,11 @@
 
 -   Así, el problema se formula:
 
-    $$
-    \min_{\mathbf{w}, b} \frac{1}{2} \|\mathbf{w}\|^2
-    \quad \text{sujeto a} \quad
-    t^{(i)} (\mathbf{w}^T \mathbf{x}^{(i)} + b) \geq 1
-    $$
+     
+    $$\min_{\mathbf{w}, b} \frac{1}{2} \|\mathbf{w}\|^2 \\
+    \quad \text{sujeto a} \quad \\
+    t^{(i)} (\mathbf{w}^T \mathbf{x}^{(i)} + b) \geq 1$$
+     
 
 -   Se resuelve mediante multiplicadores de Lagrange y optimización convexa.
 
@@ -51,15 +50,15 @@
 
 -   Para datos no perfectamente separables, se introducen variables de holgura $\xi_i \geq 0$:
 
-    $$
-    t^{(i)} (\mathbf{w}^T \mathbf{x}^{(i)} + b) \geq 1 - \xi_i
-    $$
+     
+    $$t^{(i)} (\mathbf{w}^T \mathbf{x}^{(i)} + b) \geq 1 - \xi_i$$
+     
 
 -   La función objetivo penaliza errores y minimiza el margen:
 
-    $$
-    \min_{\mathbf{w}, b, \xi} \frac{1}{2} \|\mathbf{w}\|^2 + \lambda \sum_i \xi_i
-    $$
+     
+    $$\min_{\mathbf{w}, b, \xi} \frac{1}{2} \|\mathbf{w}\|^2 + \lambda \sum_i \xi_i$$
+     
 
 -   El parámetro $\lambda$ regula el balance entre margen amplio y tolerancia a errores.
 
@@ -128,3 +127,4 @@
 -   **Vectores soporte:** puntos clave que definen la frontera.
 
 ---
+
