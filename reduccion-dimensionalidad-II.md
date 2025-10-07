@@ -1,8 +1,6 @@
-Claro, aquí te dejo un resumen mejor estructurado y claro del PDF de **Reducción de Dimensionalidad II**, incluyendo los métodos no lineales t-SNE y UMAP, con énfasis en la idea clave de LDA y una tabla mejorada con las técnicas principales:
-
 ---
 
-# Resumen Mejorado: Reducción de Dimensionalidad II
+# Resumen: Reducción de Dimensionalidad II
 
 ---
 
@@ -98,3 +96,4 @@ con $S_b$ matriz de dispersión entre clases y $S_w$ matriz de dispersión dentr
 ---
 
 ![alt text](image-4.png)
+
