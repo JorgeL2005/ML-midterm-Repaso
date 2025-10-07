@@ -4,9 +4,7 @@
 -   Se utiliza para predecir un **valor numérico** en lugar de una clase (como en clasificación).
 -   La forma general de una regresión lineal es:
 
-    $$
-    f(x) = wx + b
-    $$
+    $$f(x) = wx + b$$  
 
     Donde:
 
@@ -47,17 +45,13 @@
 
 1. **Mean Squared Error (MSE)**:
 
-    $$
-    MSE = \frac{1}{n} \sum_{i=1}^n (y_i - \hat{y_i})^2
-    $$
+    $$MSE = \frac{1}{n} \sum_{i=1}^n (y_i - \hat{y_i})^2$$
 
     - Penaliza más los errores grandes, ya que están elevados al cuadrado.
 
 2. **Mean Absolute Error (MAE)**:
 
-    $$
-    MAE = \frac{1}{n} \sum_{i=1}^n |y_i - \hat{y_i}|
-    $$
+    $$MAE = \frac{1}{n} \sum_{i=1}^n |y_i - \hat{y_i}|$$
 
     - Penaliza de forma lineal, es más robusto a outliers.
 
@@ -81,9 +75,8 @@
 -   Se extiende el concepto para múltiples variables independientes.
 -   La fórmula general es:
 
-    $$
-    f(x) = w_0 + w_1x_1 + w_2x_2 + ... + w_nx_n
-    $$
+    
+    $$f(x) = w_0 + w_1x_1 + w_2x_2 + ... + w_nx_n$$
 
     -   $w_0$ es el sesgo.
     -   Los demás $w_i$ son los pesos correspondientes a cada característica.
@@ -132,3 +125,4 @@
 | **Optimización (Descenso de Gradiente)** | Método iterativo para ajustar los pesos del modelo.                  | SGD ajusta los pesos en cada muestra.                                |
 
 ---
+
