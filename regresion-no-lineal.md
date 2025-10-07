@@ -7,9 +7,7 @@
 -   Cuando un modelo lineal no es suficiente para ajustar los datos, usamos regresión no lineal.
 -   Ejemplo clásico: regresión polinomial donde se incluyen potencias de la variable $x$:
 
-    $$
-    f(x) = w_0 + w_1 x + w_2 x^2 + \dots + w_M x^M
-    $$
+    $$f(x) = w_0 + w_1 x + w_2 x^2 + \dots + w_M x^M$$
 
 -   Se pueden combinar muchas transformaciones y variables para capturar relaciones complejas.
 
@@ -37,9 +35,9 @@
 -   Se agrega un término en la función objetivo que penaliza los pesos grandes o la cantidad de variables usadas.
 -   Función objetivo modificada:
 
-    $$
-    J(\theta) = \text{Error} + \lambda \times \text{Regularizador}
-    $$
+    
+    $$J(\theta) = \text{Error} + \lambda \times \text{Regularizador}$$
+    
 
     donde $\lambda$ controla la fuerza de la penalización.
 
@@ -60,9 +58,9 @@
 
 -   **¿Qué hace?** Penaliza la suma de los valores absolutos de los pesos:
 
-    $$
-    \text{L1} = \sum |w_i|
-    $$
+
+    $$\text{L1} = \sum |w_i|$$
+
 
 -   **Efecto:** Promueve la **esparsidad** — hace que muchos pesos se vuelvan exactamente cero.
 -   **Ventaja:** Selecciona automáticamente variables importantes y elimina las irrelevantes, facilitando interpretabilidad y reduciendo el ruido.
@@ -75,9 +73,9 @@
 
 -   **¿Qué hace?** Penaliza la suma de los cuadrados de los pesos:
 
-    $$
-    \text{L2} = \sum w_i^2
-    $$
+
+    $$\text{L2} = \sum w_i^2$$
+  
 
 -   **Efecto:** Reduce el tamaño de todos los pesos, pero **no los anula**; los hace más pequeños para que ninguno domine.
 -   **Ventaja:** Estabiliza el modelo, reduce la varianza y mejora la generalización.
@@ -90,9 +88,9 @@
 
 -   **¿Qué hace?** Combina las penalizaciones L1 y L2:
 
-    $$
-    \text{ElasticNet} = \alpha \sum |w_i| + (1-\alpha) \sum w_i^2
-    $$
+  
+    $$\text{ElasticNet} = \alpha \sum |w_i| + (1-\alpha) \sum w_i^2$$
+    
 
     donde $\alpha \in [0,1]$ controla el balance entre L1 y L2.
 
@@ -117,9 +115,9 @@
 -   Logaritmos, exponenciales, raíces cuadradas, sigmoides, etc.
 -   En modelos multivariados, se pueden combinar potencias y términos cruzados:
 
-    $$
-    f(x) = w_0 + w_1 x_1 + w_2 x_1^2 + w_3 x_2 + w_4 x_2^2 + w_5 x_1 x_2 + \dots
-    $$
+    
+    $$f(x) = w_0 + w_1 x_1 + w_2 x_1^2 + w_3 x_2 + w_4 x_2^2 + w_5 x_1 x_2 + \dots$$
+    
 
 -   Se pueden incorporar funciones no lineales de varias variables para modelar relaciones complejas.
 
@@ -132,3 +130,4 @@
 -   Mejora la representación y capacidad predictiva del modelo.
 
 ---
+
